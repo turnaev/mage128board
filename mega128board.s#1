@@ -2556,11 +2556,6 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <label x="15.24" y="45.72" size="1.778" layer="95"/>
 <wire x1="7.62" y1="45.72" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="JTAG" gate="G$1" pin="6"/>
-<wire x1="73.66" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
-<label x="86.36" y="137.16" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="PB1" class="0">
 <segment>
@@ -2586,6 +2581,13 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <wire x1="7.62" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="RESET2" class="0">
+<segment>
+<pinref part="JTAG" gate="G$1" pin="6"/>
+<wire x1="73.66" y1="137.16" x2="86.36" y2="137.16" width="0.1524" layer="91"/>
+<label x="86.36" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="TDI" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PF7(ADC7/TDI)"/>
@@ -2596,10 +2598,6 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <pinref part="CON4" gate="G$1" pin="6"/>
 <label x="129.54" y="99.06" size="1.778" layer="95"/>
 <wire x1="142.24" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="60.96" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<label x="50.8" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMS" class="0">
@@ -2613,11 +2611,6 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <label x="129.54" y="93.98" size="1.778" layer="95"/>
 <wire x1="142.24" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="JTAG" gate="G$1" pin="5"/>
-<wire x1="58.42" y1="137.16" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
-<label x="50.8" y="137.16" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="TDO" class="0">
 <segment>
@@ -2630,11 +2623,6 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <label x="129.54" y="96.52" size="1.778" layer="95"/>
 <wire x1="142.24" y1="96.52" x2="129.54" y2="96.52" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="JTAG" gate="G$1" pin="3"/>
-<wire x1="58.42" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
-<label x="50.8" y="139.7" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="TCK" class="0">
 <segment>
@@ -2646,11 +2634,6 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <pinref part="CON4" gate="G$1" pin="9"/>
 <label x="129.54" y="91.44" size="1.778" layer="95"/>
 <wire x1="142.24" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JTAG" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
-<label x="50.8" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2674,16 +2657,6 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <wire x1="142.24" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
 <label x="129.54" y="101.6" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="JTAG" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="142.24" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="JTAG" gate="G$1" pin="10"/>
-<wire x1="73.66" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="81.28" y1="127" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
-<junction x="81.28" y="132.08"/>
-</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -2706,17 +2679,53 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <wire x1="142.24" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
 <label x="129.54" y="104.14" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="N$2" class="0">
 <segment>
-<pinref part="JTAG" gate="G$1" pin="7"/>
-<wire x1="58.42" y1="134.62" x2="55.88" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="134.62" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="1" pin="+5V"/>
+<pinref part="JTAG" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="142.24" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="JTAG" gate="G$1" pin="10"/>
+<wire x1="73.66" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
 </segment>
+</net>
+<net name="TDI2" class="0">
+<segment>
+<wire x1="60.96" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
+<label x="50.8" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TMS2" class="0">
+<segment>
+<pinref part="JTAG" gate="G$1" pin="5"/>
+<wire x1="58.42" y1="137.16" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
+<label x="50.8" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TDO2" class="0">
+<segment>
+<pinref part="JTAG" gate="G$1" pin="3"/>
+<wire x1="58.42" y1="139.7" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
+<label x="50.8" y="139.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TCK2" class="0">
+<segment>
+<pinref part="JTAG" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
+<label x="50.8" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+5V2" class="0">
 <segment>
 <pinref part="JTAG" gate="G$1" pin="4"/>
 <wire x1="73.66" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="139.7" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
+<wire x1="78.74" y1="139.7" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JTAG" gate="G$1" pin="7"/>
+<wire x1="58.42" y1="134.62" x2="55.88" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="134.62" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AVCC" class="0">

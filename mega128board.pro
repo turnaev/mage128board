@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /home/lynx/eagle/mega128board/mega128board.brd
 
-Start at      : 07:37:14 (31.03.14)
-End at        : 07:37:19 (31.03.14)
-Elapsed time  : 00:00:05
+Start at      : 00:54:11 (01.04.14)
+End at        : 00:54:12 (01.04.14)
+Elapsed time  : 00:00:01
 
-Signals       :    64   RoutingGrid: 12 mil  Layers: 2
-Connections   :    70   predefined:  0 ( 0 Vias )
+Signals       :    62   RoutingGrid: 20 mil  Layers: 2
+Connections   :    74   predefined:  65 ( 2 Vias )
 
-Router memory :   408360
+Router memory :   264860
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:02  00:00:01  00:00:01  00:00:00  00:00:01
-Number of Ripups  :         0         1         0         0         0         0
+Time per pass     :  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0         0
 max. Level        :         0         1         0         0         0         0
-max. Total        :         0         1         0         0         0         0
+max. Total        :         0         0         0         0         0         0
 
-Routed            :         1        45        45        45        45        45
-Vias              :         0        54        41        10         5         5
-Resolution        :     1.4 %    64.3 %    64.3 %    64.3 %    64.3 %    64.3 %
+Routed            :         1         8         8         8         8         8
+Vias              :         0        15         8         1         1         1
+Resolution        :    89.2 %    98.6 %    98.6 %    98.6 %    98.6 %    98.6 %
 
-Final             : 64.3% finished
+Final             : 98.6% finished

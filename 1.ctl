@@ -2,7 +2,7 @@
 
 [Default]
 
-  RoutingGrid     = 12mil
+  RoutingGrid     = 20mil
 
   ; Trace Parameters:
 
@@ -10,7 +10,7 @@
 
   ; Preferred Directions:
 
-  PrefDir.1       = /
+  PrefDir.1       = |
   PrefDir.2       = 0
   PrefDir.3       = 0
   PrefDir.4       = 0
@@ -25,12 +25,12 @@
   PrefDir.13      = 0
   PrefDir.14      = 0
   PrefDir.15      = 0
-  PrefDir.16      = \
+  PrefDir.16      = -
 
   Active          =    1
   ; Cost Factors:
 
-  cfVia           =   20
+  cfVia           =    8
   cfNonPref       =    5
   cfChangeDir     =    2
   cfOrthStep      =    2
@@ -76,8 +76,6 @@
   @Route
 
   Active          =    1
-  mnSegments      =    4
-  mnExtdSteps     =    4
 
 [Busses]
 
@@ -88,8 +86,6 @@
   cfBusImpact     =    4
   cfHugging       =    0
   mnVias          =    0
-  mnSegments      =    4
-  mnExtdSteps     =    4
 
 [Route]
 
@@ -105,7 +101,6 @@
   cfVia           =   99
   cfExtdStep      =   10
   cfHugging       =    1
-  mnSegments      =    5
   mnExtdSteps     =    1
   mnRipupLevel    =    0
 
@@ -122,7 +117,6 @@
   cfPadImpact     =    2
   cfSmdImpact     =    2
   cfHugging       =    0
-  mnSegments      = 9999
 
 [Optimize3]
 

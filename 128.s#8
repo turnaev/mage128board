@@ -10115,6 +10115,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND4" gate="1" pin="GND"/>
 <junction x="134.62" y="111.76"/>
 <junction x="134.62" y="121.92"/>
+<junction x="147.32" y="106.68"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="6"/>

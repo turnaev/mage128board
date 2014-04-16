@@ -9906,7 +9906,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="152.4" y="38.1"/>
 </segment>
 </net>
-<net name="PEN" class="0">
+<net name="N$3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PEN"/>
 <wire x1="50.8" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>

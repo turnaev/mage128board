@@ -10251,6 +10251,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="25.4" y="27.94" size="1.778" layer="95"/>
 <junction x="5.08" y="27.94"/>
 </segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="109.22" x2="-40.64" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="109.22" x2="-40.64" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="-40.64" y1="109.22" x2="-40.64" y2="106.68" width="0.1524" layer="91"/>
+<junction x="-40.64" y="109.22"/>
+<junction x="-48.26" y="109.22"/>
+<label x="-55.88" y="109.22" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="109.22" x2="-55.88" y2="109.22" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="XTAL2" class="0">
 <segment>
@@ -11326,20 +11338,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="119.38" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 <label x="104.14" y="121.92" size="1.778" layer="95"/>
 <junction x="119.38" y="121.92"/>
-</segment>
-</net>
-<net name="RESET23" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="-48.26" y1="109.22" x2="-40.64" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="-40.64" y1="109.22" x2="-40.64" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="-40.64" y1="109.22" x2="-40.64" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-40.64" y="109.22"/>
-<junction x="-48.26" y="109.22"/>
-<label x="-55.88" y="109.22" size="1.778" layer="95"/>
-<wire x1="-48.26" y1="109.22" x2="-55.88" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET5" class="0">
